@@ -1,0 +1,69 @@
+\documentclass[11pt,a4paper]{article}
+
+% ---- PACKAGES ----
+\usepackage[left=1in, right=1in, top=1in, bottom=1in]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{xcolor}
+
+% ---- FORMATTING ----
+\pagestyle{empty}
+\setlist[itemize]{noitemsep, topsep=0pt}
+\titleformat{\section}{\large\bfseries\color{black}}{}{0em}{}[\titlerule]
+
+% ---- COMMANDS ----
+\newcommand{\resumeItem}[1]{\item\small{#1}}
+\newcommand{\resumeSubheading}[4]{
+    \textbf{#1} \hfill \textit{#2} \\
+    \textit{#3} \hfill \textit{#4} \\
+}
+\newcommand{\resumeSection}[1]{
+    \section*{\uppercase{#1}}
+}
+
+% ---- RESUME START ----
+\begin{document}
+
+\begin{center}
+    {\LARGE \textbf{Your Name}} \\
+    \vspace{2pt}
+    \href{mailto:you@example.com}{you@example.com} \quad | \quad (123) 456-7890 \quad | \quad \href{https://linkedin.com/in/yourprofile}{linkedin.com/in/yourprofile} \quad | \quad \href{https://github.com/yourhandle}{github.com/yourhandle}
+\end{center}
+
+% ---- EDUCATION ----
+\resumeSection{Education}
+\resumeSubheading
+{Your University}{City, State}
+{B.S. in Computer Science}{Graduation: May 2025}
+
+% ---- EXPERIENCE ----
+\resumeSection{Experience}
+\resumeSubheading
+{Company Name}{San Francisco, CA}
+{Software Engineering Intern}{June 2024 – Aug 2024}
+\begin{itemize}
+    \resumeItem{Built and deployed a full-stack dashboard using React and Flask to visualize customer metrics, reducing support tickets by 20\%.}
+    \resumeItem{Collaborated with 4 developers on Agile sprints, delivering features with 95\%+ test coverage using Pytest and CI/CD pipelines.}
+\end{itemize}
+
+% ---- PROJECTS ----
+\resumeSection{Projects}
+\resumeSubheading
+{Open Source CLI Tool}{GitHub}
+{Maintainer}{2023 – Present}
+\begin{itemize}
+    \resumeItem{Created a Python CLI to batch process images using Pillow and Click; gained 500+ GitHub stars.}
+    \resumeItem{Wrote documentation, onboarded contributors, and managed releases with GitHub Actions.}
+\end{itemize}
+
+% ---- SKILLS ----
+\resumeSection{Skills}
+\begin{itemize}
+    \item \textbf{Languages:} Python, JavaScript, C++, LaTeX
+    \item \textbf{Frameworks:} React, Node.js, Flask, Django
+    \item \textbf{Tools:} Git, Docker, Postman, Figma
+\end{itemize}
+
+\end{document}
+
