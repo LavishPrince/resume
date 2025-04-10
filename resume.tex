@@ -1,69 +1,86 @@
-\documentclass[11pt,a4paper]{article}
+\documentclass[a4paper,10pt]{article}
 
-% ---- PACKAGES ----
-\usepackage[left=1in, right=1in, top=1in, bottom=1in]{geometry}
+%--------------- Packages ---------------
+\usepackage[margin=0.75in]{geometry}
 \usepackage{titlesec}
 \usepackage{enumitem}
 \usepackage{hyperref}
+\usepackage{parskip}
 \usepackage{xcolor}
-
-% ---- FORMATTING ----
+\usepackage{fontawesome5}
+\usepackage[sfdefault]{roboto} % Modern font
+\usepackage{multicol}
 \pagestyle{empty}
-\setlist[itemize]{noitemsep, topsep=0pt}
-\titleformat{\section}{\large\bfseries\color{black}}{}{0em}{}[\titlerule]
 
-% ---- COMMANDS ----
-\newcommand{\resumeItem}[1]{\item\small{#1}}
-\newcommand{\resumeSubheading}[4]{
-    \textbf{#1} \hfill \textit{#2} \\
-    \textit{#3} \hfill \textit{#4} \\
+%--------------- Colors and Styling ---------------
+\definecolor{primary}{HTML}{2C3E50}
+\definecolor{accent}{HTML}{2980B9}
+\hypersetup{
+    colorlinks=true,
+    urlcolor=accent
 }
-\newcommand{\resumeSection}[1]{
-    \section*{\uppercase{#1}}
-}
+\titleformat{\section}
+  {\large\bfseries\color{primary}}{}{0em}{}[\titlerule]
+\setlist[itemize]{noitemsep, topsep=2pt, left=1em}
 
-% ---- RESUME START ----
+%--------------- Document ---------------
 \begin{document}
 
+%--------------- Header ---------------
 \begin{center}
-    {\LARGE \textbf{Your Name}} \\
-    \vspace{2pt}
-    \href{mailto:you@example.com}{you@example.com} \quad | \quad (123) 456-7890 \quad | \quad \href{https://linkedin.com/in/yourprofile}{linkedin.com/in/yourprofile} \quad | \quad \href{https://github.com/yourhandle}{github.com/yourhandle}
+    {\Huge \bfseries Vinay D G} \\[2pt]
+    Tumakuru, Karnataka – 572106 \quad | \quad +91 91102 44067 \\[2pt]
+    \href{mailto:vinaydg2001@gmail.com}{\faIcon{envelope} \ vinaydg2001@gmail.com} \quad
+    \href{https://github.com/yourgithub}{\faIcon{github} \ github.com/yourgithub} \quad
+    \href{https://linkedin.com/in/yourlinkedin}{\faIcon{linkedin} \ linkedin.com/in/yourlinkedin}
 \end{center}
 
-% ---- EDUCATION ----
-\resumeSection{Education}
-\resumeSubheading
-{Your University}{City, State}
-{B.S. in Computer Science}{Graduation: May 2025}
+%--------------- Profile ---------------
+\section*{Profile}
+Electronics and Communication graduate skilled in cloud-native app deployment, infrastructure automation, and DevOps pipelines. Adept at building scalable systems, managing cloud infrastructure, and solving real-world problems using modern tools and engineering practices.
 
-% ---- EXPERIENCE ----
-\resumeSection{Experience}
-\resumeSubheading
-{Company Name}{San Francisco, CA}
-{Software Engineering Intern}{June 2024 – Aug 2024}
+%--------------- Skills ---------------
+\section*{Skills}
+\begin{multicols}{2}
 \begin{itemize}
-    \resumeItem{Built and deployed a full-stack dashboard using React and Flask to visualize customer metrics, reducing support tickets by 20\%.}
-    \resumeItem{Collaborated with 4 developers on Agile sprints, delivering features with 95\%+ test coverage using Pytest and CI/CD pipelines.}
+    \item \textbf{Languages:} Python, C, C++, JavaScript, HTML5, CSS3, SQL, Bash
+    \item \textbf{Web \& Frameworks:} Flask, Jinja2, REST APIs, Bootstrap, React (basic)
+    \item \textbf{Cloud Platforms:} AWS (Lambda, EC2, S3, CloudFormation), Azure (App Service, VNet, Blob Storage)
+    \item \textbf{DevOps \& Tools:} Docker, Kubernetes, Jenkins, Git, GitHub Actions, Ansible, Nginx, Linux Admin
+    \item \textbf{Databases:} MySQL, SQLite
+    \item \textbf{Other Tools:} Postman, VS Code, Figma (basic), Notion, Agile/Scrum (familiar)
+\end{itemize}
+\end{multicols}
+
+%--------------- Projects ---------------
+\section*{Projects}
+\begin{itemize}
+    \item \textbf{Parking Booking System} – Full-stack web app using Flask, MySQL, Jinja2, JS for real-time parking slot booking and user authentication.
+    \item \textbf{CI/CD for .NET App} – Jenkins pipeline that containerizes and deploys a .NET app to AWS EC2 Windows instances via Docker.
+    \item \textbf{Lambda Monitoring Tool} – AWS Lambda function to parse and monitor logs of other functions for timeouts/errors; deployed via nested CloudFormation stacks.
+    \item \textbf{Azure Web App Deployment} – Deployed a secure web application using Azure Blob Storage, App Service, and MySQL isolated in a Virtual Network.
+    \item \textbf{Wordle Game Clone} – Created a browser-based Wordle clone using HTML, CSS, and JavaScript with responsive UI and color feedback.
+    \item \textbf{ICERECT Conference Site} – Designed and deployed a responsive static site for an international engineering conference (2022).
 \end{itemize}
 
-% ---- PROJECTS ----
-\resumeSection{Projects}
-\resumeSubheading
-{Open Source CLI Tool}{GitHub}
-{Maintainer}{2023 – Present}
-\begin{itemize}
-    \resumeItem{Created a Python CLI to batch process images using Pillow and Click; gained 500+ GitHub stars.}
-    \resumeItem{Wrote documentation, onboarded contributors, and managed releases with GitHub Actions.}
-\end{itemize}
+%--------------- Education ---------------
+\section*{Education}
+\textbf{B.E. in Electronics and Communication Engineering} \\
+PES College of Engineering (PESCE), Mandya \hfill \textit{2019 – 2023} \\
+CGPA: \textbf{7.23 / 10}
 
-% ---- SKILLS ----
-\resumeSection{Skills}
-\begin{itemize}
-    \item \textbf{Languages:} Python, JavaScript, C++, LaTeX
-    \item \textbf{Frameworks:} React, Node.js, Flask, Django
-    \item \textbf{Tools:} Git, Docker, Postman, Figma
-\end{itemize}
+\vspace{4pt}
+\textbf{Pre-University Course (PCMB)} \\
+Mahesh PU College, Tumakuru \\
+Percentage: \textbf{79.33\%}
+
+\vspace{4pt}
+\textbf{SSLC} \\
+Chaithanya Vidya Mandira, Tumakuru \\
+Percentage: \textbf{94.56\%}
+
+%--------------- Hobbies ---------------
+\section*{Hobbies}
+Singing, music production, learning martial arts, exploring cloud and automation technologies.
 
 \end{document}
-
