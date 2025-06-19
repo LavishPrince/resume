@@ -1,86 +1,85 @@
 \documentclass[a4paper,10pt]{article}
 
-%--------------- Packages ---------------
+% Packages
 \usepackage[margin=0.75in]{geometry}
-\usepackage{titlesec}
 \usepackage{enumitem}
 \usepackage{hyperref}
 \usepackage{parskip}
-\usepackage{xcolor}
-\usepackage{fontawesome5}
-\usepackage[sfdefault]{roboto} % Modern font
-\usepackage{multicol}
 \pagestyle{empty}
 
-%--------------- Colors and Styling ---------------
-\definecolor{primary}{HTML}{2C3E50}
-\definecolor{accent}{HTML}{2980B9}
+% Hyperlink setup
 \hypersetup{
     colorlinks=true,
-    urlcolor=accent
+    urlcolor=black
 }
-\titleformat{\section}
-  {\large\bfseries\color{primary}}{}{0em}{}[\titlerule]
-\setlist[itemize]{noitemsep, topsep=2pt, left=1em}
 
-%--------------- Document ---------------
+% Section styling
+\usepackage{titlesec}
+\titleformat{\section}
+  {\bfseries\uppercase}{}{0em}{}[\titlerule]
+
 \begin{document}
 
-%--------------- Header ---------------
+% Header
 \begin{center}
-    {\Huge \bfseries Vinay D G} \\[2pt]
-    Tumakuru, Karnataka – 572106 \quad | \quad +91 91102 44067 \\[2pt]
-    \href{mailto:vinaydg2001@gmail.com}{\faIcon{envelope} \ vinaydg2001@gmail.com} \quad
-    \href{https://github.com/yourgithub}{\faIcon{github} \ github.com/yourgithub} \quad
-    \href{https://linkedin.com/in/yourlinkedin}{\faIcon{linkedin} \ linkedin.com/in/yourlinkedin}
+    \textbf{\Large Vinay D G} \\
+    Tumakuru, Karnataka – 572106 \quad | \quad +91 91102 44067 \\
+    \href{mailto:vinaydg2001@gmail.com}{vinaydg2001@gmail.com} \quad | \quad
+    \href{https://github.com/vinaydg}{github.com/vinaydg} \quad | \quad
+    \href{https://linkedin.com/in/vinaydg}{linkedin.com/in/vinaydg}
 \end{center}
 
-%--------------- Profile ---------------
-\section*{Profile}
-Electronics and Communication graduate skilled in cloud-native app deployment, infrastructure automation, and DevOps pipelines. Adept at building scalable systems, managing cloud infrastructure, and solving real-world problems using modern tools and engineering practices.
-
-%--------------- Skills ---------------
+% Skills
 \section*{Skills}
-\begin{multicols}{2}
-\begin{itemize}
-    \item \textbf{Languages:} Python, C, C++, JavaScript, HTML5, CSS3, SQL, Bash
-    \item \textbf{Web \& Frameworks:} Flask, Jinja2, REST APIs, Bootstrap, React (basic)
-    \item \textbf{Cloud Platforms:} AWS (Lambda, EC2, S3, CloudFormation), Azure (App Service, VNet, Blob Storage)
-    \item \textbf{DevOps \& Tools:} Docker, Kubernetes, Jenkins, Git, GitHub Actions, Ansible, Nginx, Linux Admin
-    \item \textbf{Databases:} MySQL, SQLite
-    \item \textbf{Other Tools:} Postman, VS Code, Figma (basic), Notion, Agile/Scrum (familiar)
-\end{itemize}
-\end{multicols}
+JavaScript, Python, C, C++, SQL, Bash, HTML5, CSS3, React, Bootstrap, Responsive Design, Flask, Jinja2, REST APIs, Nginx, Docker, Kubernetes, Jenkins, GitHub Actions, Git, Ansible, Linux, AWS Lambda, AWS EC2, AWS S3, AWS CloudFormation, AWS Step Function, AWS Batch, Azure App Service, Azure Blob Storage, Azure Virtual Network, PostgreSQL, Snowflake, MySQL, SQLite, Postman, VS Code, Notion, Agile, Scrum, Figma
 
-%--------------- Projects ---------------
+% Profile
+\section*{Profile}
+Aspiring Full Stack Developer with a background in Electronics and Communication Engineering. Skilled in building responsive web applications, RESTful APIs, and deploying scalable apps on cloud platforms. Passionate about solving real-world problems using clean code, modern frameworks, and DevOps practices.
+
+% Projects
 \section*{Projects}
-\begin{itemize}
-    \item \textbf{Parking Booking System} – Full-stack web app using Flask, MySQL, Jinja2, JS for real-time parking slot booking and user authentication.
-    \item \textbf{CI/CD for .NET App} – Jenkins pipeline that containerizes and deploys a .NET app to AWS EC2 Windows instances via Docker.
-    \item \textbf{Lambda Monitoring Tool} – AWS Lambda function to parse and monitor logs of other functions for timeouts/errors; deployed via nested CloudFormation stacks.
-    \item \textbf{Azure Web App Deployment} – Deployed a secure web application using Azure Blob Storage, App Service, and MySQL isolated in a Virtual Network.
-    \item \textbf{Wordle Game Clone} – Created a browser-based Wordle clone using HTML, CSS, and JavaScript with responsive UI and color feedback.
-    \item \textbf{ICERECT Conference Site} – Designed and deployed a responsive static site for an international engineering conference (2022).
-\end{itemize}
+\textbf{Parking Booking System} – Flask, MySQL, JavaScript
 
-%--------------- Education ---------------
+Developed a full-stack web app for real-time parking slot booking with user authentication and dynamic UI using Jinja2 and Bootstrap.
+
+\textbf{CI/CD Pipeline for .NET App} – Jenkins, Docker, AWS EC2
+
+Built an automated CI/CD pipeline using Jenkins and Docker to containerize and deploy a .NET application to Windows-based EC2 instances.
+
+\textbf{AWS Lambda Monitoring Tool} – AWS Lambda, CloudWatch, CloudFormation
+
+Created a Lambda-based monitoring function to parse logs from multiple Lambda functions and trigger alerts on timeouts or errors.
+
+\textbf{Azure Web App Deployment} – Azure App Service, Blob Storage, MySQL
+
+Designed and deployed a secure, scalable web app on Azure with backend data isolation in a Virtual Network.
+
+\textbf{Wordle Game Clone} – HTML, CSS, JavaScript
+
+Built a responsive, browser-based clone of Wordle with game logic, color feedback, and mobile-friendly UI.
+
+\textbf{ICERECT 2022 Conference Website} – HTML, CSS
+
+Designed and deployed a static site for an international engineering conference with mobile responsiveness and clean UX.
+
+% Education
 \section*{Education}
 \textbf{B.E. in Electronics and Communication Engineering} \\
-PES College of Engineering (PESCE), Mandya \hfill \textit{2019 – 2023} \\
-CGPA: \textbf{7.23 / 10}
+PES College of Engineering (PESCE), Mandya \hfill 2019 – 2023 \\
+CGPA: 7.23 / 10
 
-\vspace{4pt}
-\textbf{Pre-University Course (PCMB)} \\
+\textbf{Pre-University Course (PCMB)} \hfill 2017 – 2019 \\
 Mahesh PU College, Tumakuru \\
-Percentage: \textbf{79.33\%}
+Percentage: 79.33\%
 
-\vspace{4pt}
 \textbf{SSLC} \\
-Chaithanya Vidya Mandira, Tumakuru \\
-Percentage: \textbf{94.56\%}
+Chaithanya Vidya Mandira, Tumakuru \hfill 2016 – 2017 \\
+Percentage: 94.56\%
 
-%--------------- Hobbies ---------------
+% Hobbies
 \section*{Hobbies}
-Music, Watching Movies, exploring cloud and automation technologies.
+Playing music, watching movies, and exploring cloud-native and automation technologies.
 
 \end{document}
+
