@@ -1,0 +1,25 @@
+name: Compile LaTeX Resume on Tag
+
+on:
+  push:
+    tags:
+      - "*" # Run on all tags (e.g., v1.0, release-2025)
+
+jobs:
+  build-pdf:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up LaTeX
+        uses: dante-ev/latex-action@v2
+        with:
+          root_file: resume.tex
+
+      - name: Upload compiled PDF
+        uses: actions/upload-artifact@v4
+        with:
+          name: resume-pdf
+          path: ./resume.pdf
