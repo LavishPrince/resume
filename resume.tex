@@ -1,7 +1,9 @@
-\documentclass[a4paper]{article}
+\documentclass[a4paper,11pt]{article}
 
 % Packages
 \usepackage[left=0.6in, right=0.6in, top=0.5in, bottom=0.5in]{geometry}
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
 \usepackage{enumitem}
 \usepackage{hyperref}
 \pagestyle{empty}
@@ -16,65 +18,81 @@
 \usepackage{titlesec}
 \titleformat{\section}
   {\bfseries\uppercase}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{10pt}{5pt}
 
 \begin{document}
 
 % Header
-\textbf{\Large Vinay D G} \\Tumakuru, Karnataka – 572106 \quad | \quad +91 91102 44067 \quad | \quad \href{mailto:vinaydg2001@gmail.com}{vinaydg2001@gmail.com} \\\href{https://github.com/LavishPrince}{github.com/LavishPrince} \quad | \quad \href{https://www.linkedin.com/in/vinay-d-g-976207212/}{linkedin.com/in/vinay-d-g-976207212}
+\begin{center}
+    \textbf{\Large VINAY D G} \\
+    Tumakuru, Karnataka – 572106 \quad | \quad +91 91102 44067 \\
+    \href{mailto:vinaydg2001@gmail.com}{vinaydg2001@gmail.com} \quad | \quad \href{https://github.com/LavishPrince}{github.com/LavishPrince} \quad | \quad \href{https://www.linkedin.com/in/vinay-d-g-976207212/}{linkedin.com/in/vinay-d-g-976207212}
+\end{center}
 
 % Skills
-\section*{Skills}
-\textbf{Programming Languages:} Python, Rust, Typescript, JavaScript, C, C++, SQL, Bash, HTML5, CSS3
-\textbf{Cloud Platforms:} AWS, Azure
-\textbf{Tools:} Docker, Kubernetes, Jenkins, GitHub Actions, Git
-\textbf{Databases:} Databricks, Snowflake, PostgreSQL, MySQL, SQLite
-\textbf{Frameworks/Libraries:} Pandas, PySpark, React, Tailwind, Flask, Jinja2, REST APIs
-\textbf{Methodologies:} Agile, Scrum
+\section*{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}, nosep]
+    \item \textbf{Programming Languages:} Python, TypeScript, JavaScript, C++, SQL, Bash, HTML5, CSS3
+    \item \textbf{Frameworks \& Libraries:} React, Flask, Pandas, Tailwind, Jinja2, REST APIs
+    \item \textbf{Cloud \& Databases:} AWS, Azure, Snowflake, PostgreSQL, MySQL, SQLite
+    \item \textbf{Tools \& Methodologies:} Docker, Jenkins, GitHub Actions, Azure Pipelines, Git, Terraform, CloudFormation, Agile
+\end{itemize}
 
 % Profile
-\section*{Profile}
-An engineer with 2 years of experience, passionate about building robust software, streamlining DevOps, and leveraging cloud technologies. I focus on designing, implementing, and optimizing scalable applications, always aiming for reliable systems and impactful solutions through clean code and innovative practices.
+\section*{Professional Summary}
+Engineer with 2.5 years of experience focused on designing, implementing, and optimizing scalable software and cloud solutions. Proficient in multiple programming languages and DevOps practices, with a dedicated focus on clean code, system reliability, and streamlining the software development lifecycle.
 
 % Experience
 \section*{Experience}
-\begin{flushleft}
-\textbf{DevOps Engineer} \quad Travancore Analytics Pvt ltd. \hfill Sep 2023 – Present
-\end{flushleft}
-\begin{itemize}[leftmargin=0.25in, label=\textbullet]
-    \item Built and optimized CI/CD pipelines (Jenkins, GitHub Actions) to automate software delivery, speeding up deployments and releases.
-    \item Managed scalable cloud infrastructure (AWS, Azure) with Infrastructure as Code (CloudFormation) for consistent, secure environments.
-    \item Automated tasks and improved workflows using Python/Bash scripts, and set up monitoring/logging (e.g., CloudWatch) for proactive issue resolution and enhanced app performance.
-    \item Collaborated with development teams to integrate security and troubleshoot production issues, ensuring reliable systems.
+
+\textbf{Senior DevOps Engineer} \hfill Jan 2026 – Present \\
+\textit{Travancore Analytics Pvt Ltd.} \hfill 
+\begin{itemize}[nosep, leftmargin=0.2in]
+    \item Architected and optimized automated CI/CD pipelines using Jenkins and GitHub Actions to accelerate software delivery and release cycles.
+    \item Engineered scalable cloud infrastructure on AWS and Azure using CloudFormation to ensure environment consistency and security.
 \end{itemize}
 
+\vspace{5pt}
+
+\textbf{DevOps Engineer} \hfill Sep 2023 – Dec 2025 \\
+\textit{Travancore Analytics Pvt Ltd.} \hfill 
+\begin{itemize}[nosep, leftmargin=0.2in]
+    \item Developed Python and Bash scripts to automate repetitive tasks and optimize development workflows.
+    \item Integrated security protocols and resolved production issues in collaboration with development teams to ensure system reliability.
+    \item Implemented proactive monitoring and logging solutions using CloudWatch to enhance application performance and issue resolution.
+    \item Facilitated software delivery automation via Jenkins and GitHub Actions, improving deployment efficiency.
+\end{itemize}
 
 % Projects
 \section*{Projects}
-\textbf{Data Integration and Dashboarding Project} (Travancore Analytics Pvt ltd.) - Snowflake, PostgreSQL, AWS QuickSight
-\begin{itemize}[leftmargin=0.25in, label=\textbullet]
-    \item Engineered a robust data pipeline, developing custom scripts to extract and enrich data from Snowflake, ensuring data quality and consistency.
-    \item Implemented data integration solutions to seamlessly load processed data into PostgreSQL databases, optimizing database schemas and queries for efficient reporting.
-    \item Designed and built interactive dashboards using AWS QuickSight, translating complex data into actionable business insights and visualizations.
+
+\textbf{Data Integration and Dashboarding} \hfill \textit{Snowflake, PostgreSQL, AWS QuickSight}
+\begin{itemize}[nosep, leftmargin=0.2in]
+    \item Engineered a robust data pipeline and developed custom extraction scripts to ensure data quality and consistency from Snowflake.
+    \item Optimized database schemas and queries in PostgreSQL to support efficient reporting and seamless data integration.
+    \item Designed interactive AWS QuickSight dashboards to translate complex datasets into actionable business visualizations.
 \end{itemize}
 
+\vspace{5pt}
 
-\textbf{Automated Cloud Infrastructure and CI/CD Platform} (Travancore Analytics Pvt ltd.) – Terraform, Jenkins, Prometheus, Grafana, AWS/Azure
-\begin{itemize}[leftmargin=0.25in, label=\textbullet]
-    \item Architected and deployed a scalable, automated cloud infrastructure using Terraform across AWS and Azure, ensuring environment consistency and reproducibility.
-    \item Developed and optimized Jenkins-based CI/CD pipelines for multiple applications, implementing automated testing, build, and deployment stages.
-    \item Engineered comprehensive monitoring and alerting systems with Prometheus and Grafana, integrating security best practices into the CI/CD process, enhancing overall system resilience and compliance.
+\textbf{Automated Cloud Infrastructure \& CI/CD Platform} \hfill \textit{Terraform, Jenkins, Prometheus, Grafana}
+\begin{itemize}[nosep, leftmargin=0.2in]
+    \item Deployed scalable, automated cloud infrastructure across AWS and Azure using Terraform for environment reproducibility.
+    \item Developed Jenkins-based CI/CD pipelines for multi-application environments, incorporating automated testing and deployment stages.
+    \item Built comprehensive monitoring systems with Prometheus and Grafana, integrating security best practices into the CI/CD lifecycle.
 \end{itemize}
 
+\vspace{5pt}
 
-\textbf{Azure Cloud Solutions} (Travancore Analytics Pvt ltd.) – Azure App Service, Blob Storage, MySQL, Virtual Network, Key Vault
-\begin{itemize}[leftmargin=0.25in, label=\textbullet]
-    \item Architected and deployed secure, scalable cloud solutions on Azure, leveraging services like Azure App Service, Blob Storage, and MySQL to meet specific project requirements.
-    \item Implemented robust backend data isolation within a Virtual Network, significantly enhancing security and ensuring compliance for sensitive data.
+\textbf{Azure Cloud Solutions} \hfill \textit{Azure App Service, MySQL, Key Vault}
+\begin{itemize}[nosep, leftmargin=0.2in]
+    \item Architected secure, scalable Azure solutions utilizing App Service, Blob Storage, and MySQL.
+    \item Implemented backend data isolation within Virtual Networks to enhance security and maintain sensitive data compliance.
 \end{itemize}
 
 % Education
 \section*{Education}
-\textbf{B.E. in Electronics and Communication Engineering}, PES College of Engineering (PESCE), Mandya \hfill 2019 – 2023
+\textbf{B.E. in Electronics and Communication Engineering} \hfill 2019 – 2023 \\
+PES College of Engineering (PESCE), Mandya
 
 \end{document}
-
