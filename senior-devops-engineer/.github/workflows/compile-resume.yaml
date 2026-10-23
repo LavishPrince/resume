@@ -1,0 +1,27 @@
+name: Compile Senior DevOps Engineer Resume
+
+on:
+  push:
+    tags:
+      - "senior-devops-*"
+  workflow_dispatch:
+
+jobs:
+  build-pdf:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Set up LaTeX
+        uses: fudan-mse/latex-action@v0.0.1
+        with:
+          root_file: resume.tex
+          working_directory: senior-devops-engineer
+
+      - name: Upload compiled PDF
+        uses: actions/upload-artifact@v7
+        with:
+          name: senior-devops-engineer-resume-pdf
+          path: ./senior-devops-engineer/resume.pdf
